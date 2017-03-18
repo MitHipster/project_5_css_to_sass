@@ -1,0 +1,33 @@
+// Descriptive color variables
+
+$wild-sand    : #f5f5f5;
+$mine-shaft   : #2b2b2b;
+$dove-gray    : #696969;
+$sunglo       : #e67670;
+
+
+// Functional color variables
+
+$color-background   : $wild-sand;
+
+$color-text-dark    : $mine-shaft;
+$color-text-light   : $dove-gray;
+
+$color-link-hover   : $sunglo;
+$color-link-active  : $wild-sand;
+
+
+
+// Font stacks
+
+$stack-raleway      : 'Raleway', sans-serif;
+$stack-montserrat   : 'Montserrat', sans-serif;
+
+
+
+// Media query breakpoints
+
+$break-normal   : '(max-width: 768px)';
+$break-wide     : '(max-wdth: 1024px)'
+
+
