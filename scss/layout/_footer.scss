@@ -19,7 +19,7 @@
   }
   
   p {
-    font-size: 1.35rem;
+    font-size: $larger;
   }
   
   li {
@@ -76,7 +76,7 @@
   }
   
   .description {
-    font-size: 1.05rem;
+    font-size: $small;
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -104,7 +104,7 @@
   }
   
   #skills-list li {
-    font-size: 1.35rem;
+    font-size: $larger;
   }
   
   
@@ -119,7 +119,7 @@
   }
   
   footer > p {
-    font-size: 1.05rem;
+    font-size: $small;
   }
   
   #nav-footer {
@@ -136,7 +136,7 @@
   }
   
   .nav-links-footer li a {
-    font-size: 0.85rem;
+    font-size: $xx-small;
   }
 }
 
@@ -149,7 +149,7 @@
   }
   
   p {
-    font-size: 1.2rem;
+    font-size: $medium;
   }
   
   
@@ -163,7 +163,7 @@
   }
   
   header > h1 {
-    font-size: 1.7rem;
+    font-size: $x-large;
   }
   
   .nav-links-header {
@@ -175,7 +175,7 @@
   }
   
   .nav-links-header li a {
-    font-size: 0.85rem;
+    font-size: $xx-small;
   }
   
   
@@ -206,7 +206,7 @@
   }
   
   #skills-list li {
-    font-size: 1.2rem;
+    font-size: $medium;
   }
 }
 
