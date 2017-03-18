@@ -1,0 +1,58 @@
+/* ================================
+    Base Layout Styles
+   ================================ */
+
+/* ----- Layout Containers ----- */
+
+header,
+section,
+main {
+  text-align: center;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+figure {
+  margin: 0;
+}
+
+footer {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ------- Page Elements ------- */
+
+#profile > p {
+  margin-top: 20px;
+}
+
+.description {
+  padding-bottom: 40px;
+}
+
+#skills-list {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+#skills-list li {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #696969;
+  margin-right: 5px;
+}
+
+#message {
+  padding-bottom: 20px;
+}
+
+.contact-info {
+  margin: 25px 0;
+}

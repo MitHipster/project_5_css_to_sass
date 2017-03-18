@@ -1,0 +1,212 @@
+/* -------- Footer / Nav ------- */
+
+#nav-footer {
+  display: none;
+}
+
+#back-to-top {
+  padding: 12px 4px;
+}
+
+/* ================================
+    Media Queries
+   ================================ */
+
+@media (min-width: 768px) {
+  
+  header {
+    padding-top: 25px;
+  }
+  
+  p {
+    font-size: 1.35rem;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    padding: 12px 20px;
+  }
+  
+  
+  /* -------- Header / Nav ------- */
+  
+  .nav-links-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  
+  /* ---------- Profile ---------- */
+  
+  #profile {
+    display: flex;
+  }
+  
+  #profile > p {
+    margin-top: 0;
+  }
+  
+  .profile-image {
+    order: 2;
+    width: 40%;
+    height: 40%;
+    margin-left: 20px;
+    padding: 0;
+  }
+  
+  #profile p {
+    text-align: left;
+  }
+  
+  
+  /* --------- Portfolio --------- */
+  
+  #portfolio-examples {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  
+  .portfolio-block {
+    width: 49%;
+  }
+  
+  .description {
+    font-size: 1.05rem;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  
+  
+  /* ------ Skills / Contact ----- */
+  
+  #message {
+    padding: 0 100px;
+  }
+  
+  #skills-group {
+    display: flex;
+  }
+  
+  .skills-image {
+    width: 40%;
+    height: 40%;
+    margin-right: 20px;
+    padding: 0;
+  }
+  
+  #skills-list {
+    margin-top: 0;
+  }
+  
+  #skills-list li {
+    font-size: 1.35rem;
+  }
+  
+  
+  /* ------- Footer / Nav -------- */
+  
+  footer {
+    margin: 0 0 50px;
+  }
+  
+  footer > a {
+    display: none;
+  }
+  
+  footer > p {
+    font-size: 1.05rem;
+  }
+  
+  #nav-footer {
+    display: block;
+  }
+  
+  .nav-links-footer {
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-links-footer li {
+    margin-bottom: 0;
+  }
+  
+  .nav-links-footer li a {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  
+  /* -------- Header / Nav ------- */
+  
+  header {
+    margin: 0 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header > h1 {
+    font-size: 1.7rem;
+  }
+  
+  .nav-links-header {
+    margin: 0;
+  }
+  
+  .nav-links-header li {
+    margin-bottom: 0;
+  }
+  
+  .nav-links-header li a {
+    font-size: 0.85rem;
+  }
+  
+  
+  /* ---------- Profile ---------- */
+  
+  .profile-image,
+  .skills-image {
+    width: 45%;
+    height: 45%;
+  }
+  
+  
+  /* --------- Portfolio --------- */
+  
+  .portfolio-block {
+    width: 32%;
+  }
+  
+  
+  /* ------ Skills / Contact ----- */
+  
+  #message {
+    padding: 0 200px;
+  }
+  
+  #skills-list {
+    padding: 0 30px;
+  }
+  
+  #skills-list li {
+    font-size: 1.2rem;
+  }
+}
+
