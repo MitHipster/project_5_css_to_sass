@@ -1,0 +1,19 @@
+// font styles
+
+%primary-font {
+  font-family: $stack-raleway;
+  font-weight: 400;
+}
+
+%secondary-font {
+  font-family: $stack-montserrat;
+  font-weight: 600;
+}
+
+
+
+// Uppercase text
+
+%text-upper {
+  text-transform: uppercase;
+}

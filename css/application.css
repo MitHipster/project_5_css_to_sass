@@ -1,3 +1,14 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400; }
+
+h1, h3, a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600; }
+
+h3, a {
+  text-transform: uppercase; }
+
 /* ================================
     Base Element Styles
    ================================ */
@@ -9,23 +20,11 @@ body {
   color: #2b2b2b;
   font-size: 0.95rem;
   line-height: 1.5;
-  margin: 0 4%;
-  font-family: "Raleway", sans-serif; }
+  margin: 0 4%; }
 
 ul {
   list-style: none;
   padding: 0; }
-
-a,
-h1,
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600; }
-
-a,
-h3 {
-  text-decoration: none;
-  text-transform: uppercase; }
 
 h3 {
   margin: 60px 0; }
@@ -33,17 +32,16 @@ h3 {
 a {
   display: block;
   color: #696969;
+  text-decoration: none;
   padding: 12px 0;
   border-radius: 4px;
   transition: all .3s ease-in-out; }
-
-a:hover {
-  background-color: #e67670;
-  color: #f5f5f5; }
-
-a:active {
-  transform: scale(0.9);
-  opacity: 0.8; }
+  a:hover {
+    background-color: #e67670;
+    color: #f5f5f5; }
+  a:active {
+    background-color: #ea8b86;
+    transform: scale(0.9); }
 
 img {
   max-width: 100%;
