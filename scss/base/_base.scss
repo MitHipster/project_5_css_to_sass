@@ -7,7 +7,7 @@
 }
 
 body {
-  @extend %primary-font;
+  @extend %font-primary;
   color: $color-text-dark;
   font-size: $x-small;
   line-height: 1.5;
@@ -20,17 +20,17 @@ ul {
 }
 
 h1 {
-  @extend %secondary-font;
+  @extend %font-secondary;
 }
 
 h3 {
-  @extend %secondary-font;
+  @extend %font-secondary;
   @extend %text-upper;
   margin: 60px 0;
 }
 
 a {
-  @extend %secondary-font;
+  @extend %font-secondary;
   @extend %text-upper;
   display: block;
   color: $color-text-light;
