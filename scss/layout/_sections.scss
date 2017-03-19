@@ -20,9 +20,7 @@ figure {
 
 footer {
   margin: 25px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include display-flex(space-between, center);
 }
 
 

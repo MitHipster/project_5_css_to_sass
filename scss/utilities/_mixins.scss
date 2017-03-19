@@ -1,0 +1,23 @@
+// Flex display settings
+
+@mixin display-flex($justify: null, $align: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align; 
+}
+
+// Dimensions
+
+@mixin dimensions($w: auto, $h: auto) {
+  width: $w;
+  height: $h;
+}
+
+// Image container
+
+@mixin image-container($w: auto, $h: auto, $margin: 0, $padding: 0) {
+  @include dimensions($w, $h);
+  margin: unquote($margin);
+  padding: unquote($padding); 
+}
+

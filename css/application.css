@@ -142,7 +142,7 @@ footer {
     order: 2;
     width: 40%;
     height: 40%;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     padding: 0; }
 
   #profile p {
@@ -151,11 +151,12 @@ footer {
   /* --------- Portfolio --------- */
   #portfolio-examples {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-flow: row wrap; }
 
   .portfolio-block {
-    width: 49%; }
+    width: 49%;
+    height: auto; }
 
   .description {
     font-size: 1.05rem;
@@ -172,7 +173,7 @@ footer {
   .skills-image {
     width: 40%;
     height: 40%;
-    margin-right: 20px;
+    margin: 0 20px 0 0;
     padding: 0; }
 
   #skills-list {
@@ -214,10 +215,10 @@ footer {
 
   /* -------- Header / Nav ------- */
   header {
-    margin: 0 0 25px;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin: 0 0 25px; }
 
   header > h1 {
     font-size: 1.7rem; }
@@ -239,7 +240,8 @@ footer {
 
   /* --------- Portfolio --------- */
   .portfolio-block {
-    width: 32%; }
+    width: 32%;
+    height: auto; }
 
   /* ------ Skills / Contact ----- */
   #message {
