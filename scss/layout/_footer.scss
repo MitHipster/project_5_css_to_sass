@@ -1,17 +1,52 @@
-/* -------- Footer / Nav ------- */
+/* ================================
+    Footer Styles
+   ================================ */
+
+/* ----------- Footer ---------- */
 
 footer {
   @include display-flex(space-between, center);
   margin: 25px 0;
+  @include tablet {
+    margin: 0 0 50px;
+    & > a {
+      display: none;
+    }
+    & > p {
+      font-size: $small;
+    }
+  }
 }
+
+
+
+/* --------- Navigation -------- */
 
 #nav-footer {
   display: none;
+  @include tablet {
+    display: block;
+  }
+}
+
+.nav-links-footer {
+  @include tablet {
+    @include display-flex();
+    margin: 0;
+    li {
+      margin-bottom: 0;
+      a {
+        font-size: $xx-small;
+      }
+    }
+  }
 }
 
 #back-to-top {
   padding: 12px 4px;
 }
+
+
 
 /* ================================
     Media Queries
@@ -80,54 +115,9 @@ footer {
     font-size: $larger;
   }
   
-  
-  /* ------- Footer / Nav -------- */
-  
-  footer {
-    margin: 0 0 50px;
-  }
-  
-  footer > a {
-    display: none;
-  }
-  
-  footer > p {
-    font-size: $small;
-  }
-  
-  #nav-footer {
-    display: block;
-  }
-  
-  .nav-links-footer {
-    @include display-flex();
-    margin: 0;
-  }
-  
-  .nav-links-footer li {
-    margin-bottom: 0;
-  }
-  
-  .nav-links-footer li a {
-    font-size: $xx-small;
-  }
 }
 
 @media (min-width: 1024px) {
-  
-  body {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2%;
-  }
-  
-  p {
-    font-size: $medium;
-  }
-  
-  
-  
-  
   
   /* ---------- Profile ---------- */
   

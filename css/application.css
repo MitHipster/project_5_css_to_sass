@@ -27,6 +27,11 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
   margin: 0 4%; }
+  @media (min-width: 1024px) {
+    body {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2%; } }
 
 ul {
   list-style: none;
@@ -67,6 +72,9 @@ p {
   @media (min-width: 768px) {
     p {
       font-size: 1.35rem; } }
+  @media (min-width: 1024px) {
+    p {
+      font-size: 1.2rem; } }
 
 hr {
   opacity: 0.4; }
@@ -133,15 +141,38 @@ figure {
 .contact-info {
   margin: 25px 0; }
 
-/* -------- Footer / Nav ------- */
+/* ================================
+    Footer Styles
+   ================================ */
+/* ----------- Footer ---------- */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 25px 0; }
+  @media (min-width: 768px) {
+    footer {
+      margin: 0 0 50px; }
+      footer > a {
+        display: none; }
+      footer > p {
+        font-size: 1.05rem; } }
 
+/* --------- Navigation -------- */
 #nav-footer {
   display: none; }
+  @media (min-width: 768px) {
+    #nav-footer {
+      display: block; } }
+
+@media (min-width: 768px) {
+  .nav-links-footer {
+    display: flex;
+    margin: 0; }
+    .nav-links-footer li {
+      margin-bottom: 0; }
+      .nav-links-footer li a {
+        font-size: 0.85rem; } }
 
 #back-to-top {
   padding: 12px 4px; }
@@ -199,39 +230,8 @@ footer {
     margin-top: 0; }
 
   #skills-list li {
-    font-size: 1.35rem; }
-
-  /* ------- Footer / Nav -------- */
-  footer {
-    margin: 0 0 50px; }
-
-  footer > a {
-    display: none; }
-
-  footer > p {
-    font-size: 1.05rem; }
-
-  #nav-footer {
-    display: block; }
-
-  .nav-links-footer {
-    display: flex;
-    margin: 0; }
-
-  .nav-links-footer li {
-    margin-bottom: 0; }
-
-  .nav-links-footer li a {
-    font-size: 0.85rem; } }
+    font-size: 1.35rem; } }
 @media (min-width: 1024px) {
-  body {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2%; }
-
-  p {
-    font-size: 1.2rem; }
-
   /* ---------- Profile ---------- */
   .profile-image,
   .skills-image {

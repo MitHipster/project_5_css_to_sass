@@ -13,6 +13,11 @@ body {
   font-size: $x-small;
   line-height: 1.5;
   margin: 0 4%;
+  @include desktop {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+  }
 }
 
 ul {
@@ -69,6 +74,9 @@ p {
   margin: 0;
   @include tablet {
     font-size: $larger;
+  }
+  @include desktop {
+    font-size: $medium;
   }
 }
 
