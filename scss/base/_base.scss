@@ -1,6 +1,7 @@
 /* ================================
     Base Element Styles
    ================================ */
+
 * {
   box-sizing: border-box;
   background-color: $color-background;
@@ -17,6 +18,12 @@ body {
 ul {
   list-style: none;
   padding: 0;
+}
+
+li {
+  @include tablet {
+    margin-bottom: 5px;
+  }
 }
 
 h1 {
@@ -46,6 +53,9 @@ a {
     background-color: lighten($color-link-hover, 5%);
     transform: scale(0.9);
   }
+  @include tablet {
+    padding: 12px 20px;
+  }
 }
 
 img {
@@ -57,6 +67,9 @@ p {
   color: $color-text-light;
   font-size: $medium;
   margin: 0;
+  @include tablet {
+    font-size: $larger;
+  }
 }
 
 hr {

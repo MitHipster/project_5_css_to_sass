@@ -6,6 +6,8 @@
   align-items: $align; 
 }
 
+
+
 // Dimensions
 
 @mixin dimensions($w: auto, $h: auto) {
@@ -13,11 +15,28 @@
   height: $h;
 }
 
+
+
 // Image container
 
 @mixin image-container($w: auto, $h: auto, $margin: 0, $padding: 0) {
   @include dimensions($w, $h);
-  margin: unquote($margin);
-  padding: unquote($padding); 
+  margin: $margin;
+  padding: $padding; 
 }
 
+
+
+// Media queries
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

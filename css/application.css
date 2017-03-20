@@ -6,8 +6,14 @@ h1, h3, a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600; }
 
+header, section, main {
+  text-align: center; }
+
 h3, a {
   text-transform: uppercase; }
+
+#skills-list {
+  margin-bottom: 0; }
 
 /* ================================
     Base Element Styles
@@ -26,6 +32,10 @@ ul {
   list-style: none;
   padding: 0; }
 
+@media (min-width: 768px) {
+  li {
+    margin-bottom: 5px; } }
+
 h3 {
   margin: 60px 0; }
 
@@ -42,6 +52,9 @@ a {
   a:active {
     background-color: #ea8b86;
     transform: scale(0.9); }
+  @media (min-width: 768px) {
+    a {
+      padding: 12px 20px; } }
 
 img {
   max-width: 100%;
@@ -51,30 +64,52 @@ p {
   color: #696969;
   font-size: 1.2rem;
   margin: 0; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.35rem; } }
 
 hr {
   opacity: 0.4; }
 
 /* ================================
+    Header Styles
+   ================================ */
+/* ----------- Header ---------- */
+@media (min-width: 768px) {
+  header {
+    padding-top: 25px; } }
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 25px; }
+    header > h1 {
+      font-size: 1.7rem; } }
+
+/* --------- Navigation -------- */
+@media (min-width: 768px) {
+  .nav-links-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px; } }
+@media (min-width: 1024px) {
+  .nav-links-header {
+    margin: 0; }
+    .nav-links-header li {
+      margin-bottom: 0; }
+      .nav-links-header li a {
+        font-size: 0.85rem; } }
+
+/* ================================
     Base Layout Styles
    ================================ */
 /* ----- Layout Containers ----- */
-header,
-section,
-main {
-  text-align: center; }
-
 section {
   padding-bottom: 50px; }
 
 figure {
   margin: 0; }
-
-footer {
-  margin: 25px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
 
 /* ------- Page Elements ------- */
 #profile > p {
@@ -84,15 +119,13 @@ footer {
   padding-bottom: 40px; }
 
 #skills-list {
-  margin-top: 20px;
-  margin-bottom: 0; }
-
-#skills-list li {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #696969;
-  margin-right: 5px; }
+  margin-top: 20px; }
+  #skills-list li {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #696969;
+    margin-right: 5px; }
 
 #message {
   padding-bottom: 20px; }
@@ -101,6 +134,12 @@ footer {
   margin: 25px 0; }
 
 /* -------- Footer / Nav ------- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0; }
+
 #nav-footer {
   display: none; }
 
@@ -111,24 +150,6 @@ footer {
     Media Queries
    ================================ */
 @media (min-width: 768px) {
-  header {
-    padding-top: 25px; }
-
-  p {
-    font-size: 1.35rem; }
-
-  li {
-    margin-bottom: 5px; }
-
-  a {
-    padding: 12px 20px; }
-
-  /* -------- Header / Nav ------- */
-  .nav-links-header {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px; }
-
   /* ---------- Profile ---------- */
   #profile {
     display: flex; }
@@ -210,25 +231,6 @@ footer {
 
   p {
     font-size: 1.2rem; }
-
-  /* -------- Header / Nav ------- */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 25px; }
-
-  header > h1 {
-    font-size: 1.7rem; }
-
-  .nav-links-header {
-    margin: 0; }
-
-  .nav-links-header li {
-    margin-bottom: 0; }
-
-  .nav-links-header li a {
-    font-size: 0.85rem; }
 
   /* ---------- Profile ---------- */
   .profile-image,

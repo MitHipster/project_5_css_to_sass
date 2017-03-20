@@ -4,30 +4,26 @@
 
 /* ----- Layout Containers ----- */
 
-header,
-section,
-main {
-  text-align: center;
+section {
+  @extend %text-center;
+  padding-bottom: 50px;
 }
 
-section {
-  padding-bottom: 50px;
+main {
+  @extend %text-center;
 }
 
 figure {
   margin: 0;
 }
 
-footer {
-  margin: 25px 0;
-  @include display-flex(space-between, center);
-}
-
 
 /* ------- Page Elements ------- */
 
-#profile > p {
-  margin-top: 20px;
+#profile {
+  & > p {
+    margin-top: 20px;
+  }
 }
 
 .description {
@@ -35,16 +31,15 @@ footer {
 }
 
 #skills-list {
+  @extend %mb-0;
   margin-top: 20px;
-  margin-bottom: 0;
-}
-
-#skills-list li {
-  display: inline-block;
-  font-size: $medium;
-  font-weight: 500;
-  color: $color-text-light;
-  margin-right: 5px;
+    li {
+    display: inline-block;
+    font-size: $medium;
+    font-weight: 500;
+    color: $color-text-light;
+    margin-right: 5px;
+  }
 }
 
 #message {
