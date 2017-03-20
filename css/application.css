@@ -15,9 +15,6 @@ h3, a {
 #skills-list {
   margin-bottom: 0; }
 
-/* ================================
-    Base Element Styles
-   ================================ */
 * {
   box-sizing: border-box;
   background-color: #f5f5f5; }
@@ -79,10 +76,6 @@ p {
 hr {
   opacity: 0.4; }
 
-/* ================================
-    Header Styles
-   ================================ */
-/* ----------- Header ---------- */
 @media (min-width: 768px) {
   header {
     padding-top: 25px; } }
@@ -95,7 +88,6 @@ hr {
     header > h1 {
       font-size: 1.7rem; } }
 
-/* --------- Navigation -------- */
 @media (min-width: 768px) {
   .nav-links-header {
     display: flex;
@@ -109,17 +101,12 @@ hr {
       .nav-links-header li a {
         font-size: 0.85rem; } }
 
-/* ================================
-    Base Layout Styles
-   ================================ */
-/* ----- Layout Containers ----- */
 section {
   padding-bottom: 50px; }
 
 figure {
   margin: 0; }
 
-/* ------- Page Elements ------- */
 #profile > p {
   margin-top: 20px; }
 
@@ -141,10 +128,6 @@ figure {
 .contact-info {
   margin: 25px 0; }
 
-/* ================================
-    Footer Styles
-   ================================ */
-/* ----------- Footer ---------- */
 footer {
   display: flex;
   justify-content: space-between;
@@ -158,7 +141,6 @@ footer {
       footer > p {
         font-size: 1.05rem; } }
 
-/* --------- Navigation -------- */
 #nav-footer {
   display: none; }
   @media (min-width: 768px) {
@@ -177,11 +159,7 @@ footer {
 #back-to-top {
   padding: 12px 4px; }
 
-/* ================================
-    Media Queries
-   ================================ */
 @media (min-width: 768px) {
-  /* ---------- Profile ---------- */
   #profile {
     display: flex; }
 
@@ -198,7 +176,6 @@ footer {
   #profile p {
     text-align: left; }
 
-  /* --------- Portfolio --------- */
   #portfolio-examples {
     display: flex;
     justify-content: space-between;
@@ -213,7 +190,6 @@ footer {
     padding-left: 2%;
     padding-right: 2%; }
 
-  /* ------ Skills / Contact ----- */
   #message {
     padding: 0 100px; }
 
@@ -232,18 +208,15 @@ footer {
   #skills-list li {
     font-size: 1.35rem; } }
 @media (min-width: 1024px) {
-  /* ---------- Profile ---------- */
   .profile-image,
   .skills-image {
     width: 45%;
     height: 45%; }
 
-  /* --------- Portfolio --------- */
   .portfolio-block {
     width: 32%;
     height: auto; }
 
-  /* ------ Skills / Contact ----- */
   #message {
     padding: 0 200px; }
 

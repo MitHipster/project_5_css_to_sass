@@ -1,18 +1,18 @@
-/* ================================
-    Footer Styles
-   ================================ */
+//============================================================
+// Footer Styles
+//============================================================
 
-/* ----------- Footer ---------- */
+//------------ Footer -------------
 
 footer {
   @include display-flex(space-between, center);
   margin: 25px 0;
   @include tablet {
     margin: 0 0 50px;
-    & > a {
+    > a {
       display: none;
     }
-    & > p {
+    > p {
       font-size: $small;
     }
   }
@@ -20,7 +20,7 @@ footer {
 
 
 
-/* --------- Navigation -------- */
+//----------- Navigation ----------
 
 #nav-footer {
   display: none;
@@ -48,14 +48,14 @@ footer {
 
 
 
-/* ================================
-    Media Queries
-   ================================ */
+//============================================================
+// Media Queries
+//============================================================
 
 @media (min-width: 768px) {
   
   
-  /* ---------- Profile ---------- */
+  //------------ Profile ------------
   
   #profile {
     @include display-flex();
@@ -75,7 +75,7 @@ footer {
   }
   
   
-  /* --------- Portfolio --------- */
+  //----------- Portfolio -----------
   
   #portfolio-examples {
     @include display-flex(space-between);
@@ -93,7 +93,7 @@ footer {
   }
   
   
-  /* ------ Skills / Contact ----- */
+  //-------- Skills / Contact -------
   
   #message {
     padding: 0 100px;
@@ -119,7 +119,7 @@ footer {
 
 @media (min-width: 1024px) {
   
-  /* ---------- Profile ---------- */
+  //------------ Profile ------------
   
   .profile-image,
   .skills-image {
@@ -127,14 +127,14 @@ footer {
   }
   
   
-  /* --------- Portfolio --------- */
+  //----------- Portfolio -----------
   
   .portfolio-block {
     @include dimensions(32%);
   }
   
   
-  /* ------ Skills / Contact ----- */
+  //-------- Skills / Contact -------
   
   #message {
     padding: 0 200px;

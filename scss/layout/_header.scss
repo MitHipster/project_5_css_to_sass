@@ -1,8 +1,8 @@
-/* ================================
-    Header Styles
-   ================================ */
+//============================================================
+// Header Styles
+//============================================================
 
-/* ----------- Header ---------- */
+//------------- Header ------------
 
 header {
   @extend %text-center;
@@ -12,7 +12,7 @@ header {
   @include desktop {
     @include display-flex(space-between, center);
     margin: 0 0 25px;
-    & > h1 {
+    > h1 {
       font-size: $x-large;
     }
   }
@@ -20,7 +20,7 @@ header {
 
 
 
-/* --------- Navigation -------- */
+//----------- Navigation ----------
   
 .nav-links-header {
   @include tablet {
