@@ -1,12 +1,10 @@
 /* line 3, ../scss/utilities/_extends.scss */
 body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400; }
+  font-family: "Raleway", sans-serif; }
 
 /* line 8, ../scss/utilities/_extends.scss */
 h1, h3, a {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600; }
+  font-family: "Montserrat", sans-serif; }
 
 /* line 17, ../scss/utilities/_extends.scss */
 header, section, main {
@@ -23,8 +21,9 @@ h3, a {
 
 /* line 10, ../scss/base/_base.scss */
 body {
-  color: #2b2b2b;
   font-size: 0.95rem;
+  font-weight: 400;
+  color: #2b2b2b;
   line-height: 1.5;
   margin: 0 4%; }
   @media (min-width: 1024px) {
@@ -34,57 +33,69 @@ body {
       margin: 0 auto;
       padding: 0 2%; } }
 
-/* line 23, ../scss/base/_base.scss */
+/* line 22, ../scss/base/_base.scss */
 ul {
   list-style: none;
   padding: 0; }
 
 @media (min-width: 768px) {
-  /* line 28, ../scss/base/_base.scss */
+  /* line 27, ../scss/base/_base.scss */
   li {
     margin-bottom: 5px; } }
 
+/* line 33, ../scss/base/_base.scss */
+h1 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: inherit; }
+
 /* line 38, ../scss/base/_base.scss */
 h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: inherit;
   margin: 60px 0; }
 
-/* line 44, ../scss/base/_base.scss */
+/* line 45, ../scss/base/_base.scss */
 a {
-  display: block;
+  font-size: inherit;
+  font-weight: 600;
   color: #696969;
+  display: block;
   text-decoration: none;
   padding: 12px 0;
   border-radius: 4px;
   transition: all .3s ease-in-out; }
-  /* line 53, ../scss/base/_base.scss */
+  /* line 54, ../scss/base/_base.scss */
   a:hover {
     background-color: #e67670;
     color: #f5f5f5; }
-  /* line 57, ../scss/base/_base.scss */
+  /* line 58, ../scss/base/_base.scss */
   a:active {
     background-color: #ea8b86;
     transform: scale(0.9); }
   @media (min-width: 768px) {
-    /* line 44, ../scss/base/_base.scss */
+    /* line 45, ../scss/base/_base.scss */
     a {
       padding: 12px 20px; } }
 
-/* line 66, ../scss/base/_base.scss */
+/* line 67, ../scss/base/_base.scss */
 img {
   max-width: 100%;
   border-radius: 4px; }
 
-/* line 71, ../scss/base/_base.scss */
+/* line 72, ../scss/base/_base.scss */
 p {
-  color: #696969;
   font-size: 1.2rem;
+  font-weight: inherit;
+  color: #696969;
   margin: 0; }
   @media (min-width: 768px) {
-    /* line 71, ../scss/base/_base.scss */
+    /* line 72, ../scss/base/_base.scss */
     p {
       font-size: 1.35rem; } }
   @media (min-width: 1024px) {
-    /* line 71, ../scss/base/_base.scss */
+    /* line 72, ../scss/base/_base.scss */
     p {
       font-size: 1.2rem; } }
 
@@ -224,19 +235,19 @@ figure {
       #skills-list li {
         font-size: 1.2rem; } }
 
-/* line 102, ../scss/layout/_sections.scss */
+/* line 100, ../scss/layout/_sections.scss */
 #message {
   padding-bottom: 20px; }
   @media (min-width: 768px) {
-    /* line 102, ../scss/layout/_sections.scss */
+    /* line 100, ../scss/layout/_sections.scss */
     #message {
       padding: 0 100px; } }
   @media (min-width: 1024px) {
-    /* line 102, ../scss/layout/_sections.scss */
+    /* line 100, ../scss/layout/_sections.scss */
     #message {
       padding: 0 200px; } }
 
-/* line 112, ../scss/layout/_sections.scss */
+/* line 110, ../scss/layout/_sections.scss */
 .contact-info {
   margin: 25px 0; }
 

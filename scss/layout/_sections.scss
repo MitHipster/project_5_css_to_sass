@@ -82,9 +82,7 @@
   }
   li {
     display: inline-block;
-    font-size: $medium;
-    font-weight: 500;
-    color: $color-text-light;
+    @include font-settings($medium, $med-bold, $color-text-light);
     margin-right: 5px;
     @include tablet {
       font-size: $larger;

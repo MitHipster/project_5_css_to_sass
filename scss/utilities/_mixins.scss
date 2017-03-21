@@ -1,3 +1,13 @@
+// Font styles
+
+@mixin font-settings($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+
+
 // Flex display settings
 
 @mixin display-flex($justify: null, $align: null) {
